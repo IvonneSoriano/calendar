@@ -1,0 +1,81 @@
+@mixin  theme($color) {
+    .contenedor{
+        background: $color;
+        .panel-container{
+            header{
+                .theme{
+                    background: $color;
+                }
+            }
+            .calendario{
+                .calendar-grid{
+                    .date{
+                        .number{
+                            &.active{
+                                background: $color;
+                            }
+                            &.used{
+                                border-color: $color;
+                            }
+                        }
+                    }
+                }
+            }
+            .show-day{
+                .selected-date{
+                    .circle{
+                        background: $color;
+                    }
+                }
+            }
+        }
+    }
+}
+.yellow{
+    @include theme($yellow);
+}
+.rose{
+    @include theme($rose);
+}
+.fucsia{
+    @include theme($fucsia);
+}
+.red{
+    @include theme($red);
+}
+.orange{
+    @include theme($orange);
+}
+.orangee{
+    @include theme($orangee);
+}
+.mustard{
+    @include theme($mustard);
+}
+.gold{
+    @include theme($gold);
+}
+.green{
+    @include theme($green);
+}
+.cyan{
+    @include theme($cyan);
+}
+.turquoise{
+    @include theme($turquoise);
+}
+.sky{
+    @include theme($sky);
+}
+.ocean{
+    @include theme($ocean);
+}
+.blue{
+    @include theme($blue);
+}
+.purple{
+    @include theme($purple);
+}
+.violet{
+    @include theme($violet);
+}
